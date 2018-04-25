@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    text-align: center;
+}
+
+.panel {
+    text-align: center;
+    width: 100%;
+}
+.panel .moves .restart .level {
+    display: inline-block;
+}
+.level {
+    float: right;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 505px;  
+    overflow: auto;
+    background-color: rgba(150,200,250,0.4);
+}
+.modal.open{
+    display: block;
+    margin: 35% 0 0 50%;
+    left: -252px;
+    animation: modalShow 3s;
+}
+
+@keyframes modalShow {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.modal-content {
+    background-color: bisque;
+    margin: 5% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal-buttons {
+    background-color:rgba(150,200,250,0.4);
+}
+.yes {
+    font-weight: bold;
+    float: right;
+}
+.yes .no {
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 4em;
+    color: blue;
+}
+
+.no {
+    float: left;
+}
